@@ -1,0 +1,40 @@
+package com.mmit.jpit.scope;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.w3c.dom.css.Counter;
+@WebServlet("/count")
+public class CounterController extends HttpServlet {
+	
+	private static final long serialVersionUID = 1L;
+	private static final String COUNTER="counter";
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//Request scope
+		Object reqObj=req.getAttribute(COUNTER);
+		Counter reqCounter=null;
+		if(reqObj!=null) {
+			reqCounter=(Counter)reqObj;
+		}else {
+			reqCounter=new Counter();
+		}
+		
+		//session scope
+		
+		
+		//application scope
+		
+		
+		
+	}
+	
+	
+
+}
