@@ -42,3 +42,32 @@ Dec 17, 2020 15:22:32.959 [1217/152232.958:ERROR:directory_reader_win.cc(43)] Fi
 Dec 18, 2020 16:02:15.828 NEW SESSION
 Dec 18, 2020 16:02:15.828 [12192:9960:1218/160215.779:ERROR:device_event_log_impl.cc(211)] [16:02:15.778] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
 Dec 18, 2020 16:11:30.515 [1218/161130.514:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+
+Dec 18, 2020 21:28:59.342 NEW SESSION
+Dec 18, 2020 21:28:59.342 [6360:232:1218/212859.282:ERROR:device_event_log_impl.cc(211)] [21:28:59.281] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Dec 18, 2020 21:29:01.336 [6360:9152:1218/212901.335:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 18, 2020 21:29:27.282 [6360:9152:1218/212927.282:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 18, 2020 21:30:09.861 [6360:9152:1218/213009.861:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 18, 2020 21:31:37.167 [6360:9152:1218/213137.166:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 18, 2020 21:38:16.853 [1218/213816.852:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+
+Dec 19, 2020 09:45:10.712 NEW SESSION
+Dec 19, 2020 09:45:10.713 [7228:9104:1219/094510.518:ERROR:device_event_log_impl.cc(211)] [09:45:10.519] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Dec 19, 2020 09:45:12.75 [7228:4256:1219/094512.074:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 19, 2020 09:45:33.469 [7228:4256:1219/094533.469:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 19, 2020 09:46:16.366 [7228:4256:1219/094616.366:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 19, 2020 09:47:37.533 [7228:4256:1219/094737.533:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 19, 2020 09:50:48.964 [7228:4256:1219/095048.964:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 19, 2020 09:54:35.755 [1219/095435.754:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+Dec 19, 2020 13:39:57.511 [2408:9604:1219/133957.509:ERROR:device_event_log_impl.cc(211)] [13:39:57.509] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Dec 19, 2020 13:49:49.379 [1219/134949.378:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+Dec 19, 2020 13:57:05.76 [9120:6608:1219/135705.074:ERROR:device_event_log_impl.cc(211)] [13:57:05.074] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Dec 19, 2020 13:57:16.438 [9120:9364:1219/135716.437:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Dec 19, 2020 13:57:38.968 [9120:9364:1219/135738.968:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Dec 19, 2020 13:58:18.298 [9120:9364:1219/135818.297:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 19, 2020 13:58:37.171 [9120:9364:1219/135837.171:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Dec 19, 2020 13:58:43.585 [9120:9364:1219/135843.585:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 19, 2020 13:58:48.621 [9120:9364:1219/135848.620:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Dec 19, 2020 13:58:58.299 [9120:9364:1219/135858.299:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Dec 19, 2020 13:59:25.856 [9120:9364:1219/135925.856:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Dec 19, 2020 13:59:43.682 [9120:9364:1219/135943.682:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105

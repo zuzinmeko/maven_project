@@ -1,11 +1,15 @@
 INDEX VERSION 1.131
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3475248168.index
+\07-El-JSTL\src\main\java
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\566849162.index
+\07-El-JSTL\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1571799513.index
 \05-java-bean\src\main\java
-D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3631057665.index
-\03-servlet-scope\src\main\java
-D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3706700297.index
-\04-employee-scope\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2166327621.index
 \06-ExpressionLanguage\src\main\java
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3706700297.index
+\04-employee-scope\src\main\java
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3631057665.index
+\03-servlet-scope\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4176388437.index
 \02-hello-servlet\src\main\java

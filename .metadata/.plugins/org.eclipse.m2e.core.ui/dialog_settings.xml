@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Testing_JavaEE\05-java-bean"/>
 			<item value="D:\Testing_JavaEE\03-servlet-scope"/>
 			<item value="D:\Testing_JavaEE\Servers"/>
 		</list>
@@ -50,6 +51,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="07-El-JSTL"/>
+			<item value="06-ExpressionLanguage"/>
 			<item value="05-java-bean"/>
 			<item value="04-employee-scope"/>
 			<item value="03-servlet-scope"/>
