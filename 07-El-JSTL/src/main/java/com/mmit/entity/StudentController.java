@@ -53,7 +53,8 @@ public class StudentController extends HttpServlet {
 				//invoke other web page(for display)
 				//System.out.println("path :"+req.getContextPath());
 				//resp.sendRedirect(req.getContextPath());
-				getServletContext().getRequestDispatcher("/student.jsp").forward(req, resp);
+				//getServletContext().getRequestDispatcher("/student.jsp").forward(req, resp);
+				resp.sendRedirect("student.jsp");
 	
 	}
 

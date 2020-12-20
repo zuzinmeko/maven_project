@@ -28,7 +28,7 @@
 		        </li>
 		        <li class="nav-item">
 		        <c:url value="/student.jsp" var="student"></c:url>
-		          <a class="nav-link ${(not empty title and title=='addstudent') ? 'active' :''}" href="${student }">Student list</a>
+		          <a class="nav-link ${not empty title ? 'active' :'' }" href="${student }">Student list</a>
 		        </li>
 		        <li class="nav-item">
 		        <c:url value="/add-student" var="studentAdd"></c:url>

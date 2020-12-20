@@ -74,75 +74,75 @@
   <core validator-id="jsf-verification"/>
   <core validator-id="jboss.cdi.core"/>
   <el>
-   <linked-el length="14" name="%0" offset="619" path="%1"/>
-   <linked-el length="13" name="%0" offset="1687" path="%2"/>
-   <linked-el length="16" name="%0" offset="1074" path="%3"/>
-   <linked-el length="15" name="%0" offset="1106" path="%3"/>
-   <linked-el length="16" name="%0" offset="1009" path="%3"/>
-   <linked-el length="17" name="%0" offset="1041" path="%3"/>
-   <linked-el length="19" name="%0" offset="1137" path="%3"/>
-   <linked-el length="23" name="%0" offset="1172" path="%3"/>
-   <linked-el length="18" name="%4" offset="956" path="%3"/>
-   <linked-el length="71" name="%5" offset="1611" path="%2"/>
-   <linked-el length="71" name="%5" offset="1370" path="%2"/>
-   <linked-el length="42" name="%5" offset="1093" path="%2"/>
-   <linked-el length="71" name="%5" offset="1855" path="%2"/>
-   <linked-el length="17" name="%6" offset="1041" path="%3"/>
-   <linked-el length="19" name="%7" offset="1082" path="%8"/>
-   <linked-el length="15" name="%9" offset="1106" path="%3"/>
-   <linked-el length="16" name="%10" offset="1931" path="%2"/>
-   <linked-el length="20" name="%11" offset="1117" path="%8"/>
-   <linked-el length="15" name="%12" offset="1446" path="%2"/>
-   <linked-el length="13" name="%13" offset="619" path="%14"/>
-   <linked-el length="16" name="%13" offset="1018" path="%8"/>
-   <linked-el length="16" name="%13" offset="1050" path="%8"/>
-   <linked-el length="19" name="%13" offset="1082" path="%8"/>
-   <linked-el length="15" name="%13" offset="987" path="%8"/>
-   <linked-el length="20" name="%13" offset="1117" path="%8"/>
-   <linked-el length="10" name="%15" offset="814" path="%14"/>
-   <linked-el length="10" name="%15" offset="635" path="%8"/>
-   <linked-el length="16" name="%16" offset="1074" path="%3"/>
-   <linked-el length="10" name="%17" offset="519" path="%2"/>
-   <linked-el length="12" name="%18" offset="380" path="%2"/>
-   <linked-el length="15" name="%19" offset="987" path="%8"/>
-   <linked-el length="19" name="%20" offset="1137" path="%3"/>
-   <linked-el length="17" name="%21" offset="640" path="%3"/>
-   <linked-el length="16" name="%22" offset="1018" path="%8"/>
-   <linked-el length="16" name="%23" offset="1009" path="%3"/>
-   <linked-el length="10" name="%24" offset="462" path="%2"/>
-   <linked-el length="16" name="%25" offset="1050" path="%8"/>
-   <linked-el length="17" name="%26" offset="822" path="%1"/>
-   <linked-el length="17" name="%27" offset="936" path="%8"/>
-   <linked-el length="23" name="%28" offset="1172" path="%3"/>
+   <linked-el length="10" name="%0" offset="814" path="%1"/>
+   <linked-el length="10" name="%0" offset="635" path="%2"/>
+   <linked-el length="16" name="%3" offset="1074" path="%4"/>
+   <linked-el length="10" name="%5" offset="519" path="%6"/>
+   <linked-el length="14" name="%7" offset="619" path="%8"/>
+   <linked-el length="13" name="%7" offset="1687" path="%6"/>
+   <linked-el length="16" name="%7" offset="1074" path="%4"/>
+   <linked-el length="15" name="%7" offset="1106" path="%4"/>
+   <linked-el length="16" name="%7" offset="1009" path="%4"/>
+   <linked-el length="17" name="%7" offset="1041" path="%4"/>
+   <linked-el length="19" name="%7" offset="1137" path="%4"/>
+   <linked-el length="23" name="%7" offset="1172" path="%4"/>
+   <linked-el length="18" name="%9" offset="956" path="%4"/>
+   <linked-el length="12" name="%10" offset="380" path="%6"/>
+   <linked-el length="15" name="%11" offset="987" path="%2"/>
+   <linked-el length="71" name="%12" offset="1611" path="%6"/>
+   <linked-el length="71" name="%12" offset="1370" path="%6"/>
+   <linked-el length="42" name="%12" offset="1093" path="%6"/>
+   <linked-el length="71" name="%12" offset="1855" path="%6"/>
+   <linked-el length="17" name="%13" offset="1041" path="%4"/>
+   <linked-el length="19" name="%14" offset="1137" path="%4"/>
+   <linked-el length="19" name="%15" offset="1082" path="%2"/>
+   <linked-el length="15" name="%16" offset="1106" path="%4"/>
+   <linked-el length="16" name="%17" offset="1931" path="%6"/>
+   <linked-el length="17" name="%18" offset="640" path="%4"/>
+   <linked-el length="16" name="%19" offset="1018" path="%2"/>
+   <linked-el length="16" name="%20" offset="1009" path="%4"/>
+   <linked-el length="10" name="%21" offset="462" path="%6"/>
+   <linked-el length="20" name="%22" offset="1117" path="%2"/>
+   <linked-el length="16" name="%23" offset="1050" path="%2"/>
+   <linked-el length="15" name="%24" offset="1446" path="%6"/>
+   <linked-el length="13" name="%25" offset="619" path="%1"/>
+   <linked-el length="16" name="%25" offset="1018" path="%2"/>
+   <linked-el length="16" name="%25" offset="1050" path="%2"/>
+   <linked-el length="19" name="%25" offset="1082" path="%2"/>
+   <linked-el length="15" name="%25" offset="987" path="%2"/>
+   <linked-el length="20" name="%25" offset="1117" path="%2"/>
+   <linked-el length="17" name="%26" offset="822" path="%8"/>
+   <linked-el length="17" name="%27" offset="936" path="%2"/>
+   <linked-el length="23" name="%28" offset="1172" path="%4"/>
   </el>
  </validation>
  <aliases>
-  <alias path="student" value="%0"/>
-  <alias path="/07-El-JSTL/src/main/webapp/student-add.jsp" value="%1"/>
-  <alias path="studentlist" value="%4"/>
-  <alias path="title" value="%5"/>
-  <alias path="student.email" value="%6"/>
-  <alias path="course.duration" value="%7"/>
-  <alias path="student.age" value="%9"/>
-  <alias path="studentAdd" value="%10"/>
-  <alias path="/07-El-JSTL/src/main/webapp/student.jsp" value="%3"/>
-  <alias path="/07-El-JSTL/src/main/webapp/course-add.jsp" value="%14"/>
-  <alias path="/07-El-JSTL/src/main/webapp/common/menu.jsp" value="%2"/>
-  <alias path="course.startDate" value="%11"/>
-  <alias path="courseAdd" value="%12"/>
-  <alias path="course" value="%13"/>
-  <alias path="/07-El-JSTL/src/main/webapp/index.jsp" value="%8"/>
-  <alias path="add" value="%15"/>
-  <alias path="student.year" value="%16"/>
-  <alias path="jsJS" value="%17"/>
-  <alias path="bsCSS" value="%18"/>
-  <alias path="course.name" value="%19"/>
-  <alias path="student.address" value="%20"/>
-  <alias path="studentadd" value="%21"/>
-  <alias path="course.level" value="%22"/>
-  <alias path="student.name" value="%23"/>
-  <alias path="bsJS" value="%24"/>
-  <alias path="course.price" value="%25"/>
+  <alias path="student" value="%7"/>
+  <alias path="/07-El-JSTL/src/main/webapp/student-add.jsp" value="%8"/>
+  <alias path="studentlist" value="%9"/>
+  <alias path="title" value="%12"/>
+  <alias path="student.email" value="%13"/>
+  <alias path="course.duration" value="%15"/>
+  <alias path="student.age" value="%16"/>
+  <alias path="studentAdd" value="%17"/>
+  <alias path="/07-El-JSTL/src/main/webapp/course-add.jsp" value="%1"/>
+  <alias path="/07-El-JSTL/src/main/webapp/student.jsp" value="%4"/>
+  <alias path="/07-El-JSTL/src/main/webapp/common/menu.jsp" value="%6"/>
+  <alias path="course.startDate" value="%22"/>
+  <alias path="courseAdd" value="%24"/>
+  <alias path="course" value="%25"/>
+  <alias path="/07-El-JSTL/src/main/webapp/index.jsp" value="%2"/>
+  <alias path="add" value="%0"/>
+  <alias path="student.year" value="%3"/>
+  <alias path="jsJS" value="%5"/>
+  <alias path="bsCSS" value="%10"/>
+  <alias path="course.name" value="%11"/>
+  <alias path="student.address" value="%14"/>
+  <alias path="studentadd" value="%18"/>
+  <alias path="course.level" value="%19"/>
+  <alias path="student.name" value="%20"/>
+  <alias path="bsJS" value="%21"/>
+  <alias path="course.price" value="%23"/>
   <alias path="addstudent" value="%26"/>
   <alias path="courselist" value="%27"/>
   <alias path="student.dateOfBirth" value="%28"/>
