@@ -56,7 +56,7 @@
 				</div>
 				<div class="form-group">
 						<button type="submit" class="btn btn-outline-primary">Save</button>
-						<button type="submit" class="btn btn-outline-danger float-right">Reset</button>
+						<button type="reset" class="btn btn-outline-danger float-right">Reset</button>
 				</div>
 			</form>
 		</div>

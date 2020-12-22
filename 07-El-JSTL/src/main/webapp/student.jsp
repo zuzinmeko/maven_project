@@ -24,21 +24,25 @@
 	<div class="row">
 		<table class="table table-info border-dark">
 			<tr>
+					<th>Photo</th>
 					<th>Name</th>
 					<th>Email</th>
 					<th>Year</th>
 					<th>Age</th>
 					<th>Address</th>
 					<th>Date of birth</th>
+					
 			</tr>
 			<c:forEach items="${studentlist }" var="student">
 				<tr>
+					<td><img src="/07-El-JSTL/imgUploads/${student.profile}" alt="img" width="150" height="100" /></td>
 					<td>${student.name }</td>
 					<td>${student.email }</td>
 					<td>${student.year }</td>
 					<td>${student.age }</td>
 					<td>${student.address }</td>
 					<td>${student.dateOfBirth }</td>
+					
 				</tr>
 				</c:forEach>
 		</table>

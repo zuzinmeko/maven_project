@@ -9,6 +9,14 @@ public class Student {
 	private String year;
 	private String address;
 	private LocalDate dateOfBirth;
+	private String profile;
+	
+	public String getProfile() {
+		return profile;
+	}
+	public void setProfile(String profile) {
+		this.profile = profile;
+	}
 	public String getName() {
 		return name;
 	}

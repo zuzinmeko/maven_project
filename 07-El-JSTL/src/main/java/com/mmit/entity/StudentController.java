@@ -1,17 +1,21 @@
 package com.mmit.entity;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.servlet.http.Part;
 @WebServlet({"/add-student","/student"})
+@MultipartConfig
 public class StudentController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -20,6 +24,7 @@ public class StudentController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setAttribute("title", "addstudent");
 		getServletContext().getRequestDispatcher("/student-add.jsp").forward(req, resp);
+		
 	}
 	
 	@Override
@@ -31,6 +36,19 @@ public class StudentController extends HttpServlet {
 				String age=req.getParameter("age");
 				String address =req.getParameter("address");
 				String dateofbirth=req.getParameter("date");
+				Part imgPart=req.getPart("photo");
+				
+				String imgFileName=imgPart.getSubmittedFileName();//user.jpg
+				//System.out.println("imgFileName "+imgFileName);
+				
+				String CurrentName=imgFileName.substring(0,imgFileName.lastIndexOf("."));
+				//System.out.println("currentName :"+CurrentName);
+				
+				String newName=""+System.currentTimeMillis();//user12345678
+				//System.out.println("newName "+newName);
+				
+				imgFileName=imgFileName.replace(CurrentName, newName);//user12345678.jpg
+				//System.out.println("After upload img file "+imgFileName);
 			
 				//create object
 				Student student=new Student();
@@ -40,6 +58,9 @@ public class StudentController extends HttpServlet {
 				student.setYear(year);
 				student.setAddress(address);
 				student.setDateOfBirth(LocalDate.parse(dateofbirth));
+				student.setProfile(imgFileName);
+				
+				
 				//get session object
 				HttpSession session=req.getSession(true);
 				List<Student> list=(ArrayList<Student>)session.getAttribute("studentlist");
@@ -49,6 +70,14 @@ public class StudentController extends HttpServlet {
 				list.add(student);
 				//add list object to session object
 				session.setAttribute("studentlist", list);
+				
+				String rootPath=getServletContext().getRealPath("");
+				String dirPath=rootPath+File.separator+"imgUploads";
+				File rootDir=new File(dirPath);
+				if(!rootDir.exists())
+					rootDir.mkdirs();
+				
+				imgPart.write(rootDir+File.separator+imgFileName);
 					
 				//invoke other web page(for display)
 				//System.out.println("path :"+req.getContextPath());
