@@ -1,8 +1,6 @@
 INDEX VERSION 1.4+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-566849162.index
 2812854053.index
 3557104051.index
-566849162.index
 2357255096.index
 724235182.index
 843670970.index

@@ -9,12 +9,19 @@
 <link href="./common/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<style>
+table,tr, td,th {
+  border: 1px solid black;
+  border-collapse: collapse;
+ 
+}
+</style>
 <jsp:include page="/common/menu.jsp"></jsp:include>
 
 <div class="container">
 	<div class="row">
 		<div class="col-10 mt-5">
-			<h3>All students</h3> <hr />
+			<h3>All students</h3>
 		</div>
 		<div class="col-2 mt-5">
 				<c:url value="/student-add.jsp" var="studentadd"></c:url>
@@ -22,7 +29,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<table class="table table-info border-dark">
+		<table class="table border-dark">
 			<tr>
 					<th>Photo</th>
 					<th>Name</th>

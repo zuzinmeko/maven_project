@@ -27,8 +27,8 @@
 		          <a class="nav-link  ${(not empty title and title=='addcourse') ? 'active' :''}" href="${courseAdd }">Add course</a>
 		        </li>
 		        <li class="nav-item">
-		        <c:url value="/student.jsp" var="student"></c:url>
-		          <a class="nav-link" href="${student }">Student list</a>
+		        <c:url value="/students" var="student"></c:url>
+		          <a class="nav-link ${(not empty title and title=='students') ? 'active' :''}" href="${student }">Student list</a>
 		        </li>
 		        <li class="nav-item">
 		        <c:url value="/add-student" var="studentAdd"></c:url>

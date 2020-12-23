@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
-@WebServlet({"/add-student","/student"})
+@WebServlet({"/add-student","/students"})
 @MultipartConfig
 public class StudentController extends HttpServlet {
 
@@ -22,8 +22,16 @@ public class StudentController extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.setAttribute("title", "addstudent");
-		getServletContext().getRequestDispatcher("/student-add.jsp").forward(req, resp);
+		String path=req.getServletPath();
+		String title="students";
+		String page="/student.jsp";
+		
+		if("/add-student".equals(path)) {
+			title="addstudent";
+			page="/student-add.jsp";
+		}
+		req.setAttribute("title", title);
+		getServletContext().getRequestDispatcher(page).forward(req, resp);
 		
 	}
 	
