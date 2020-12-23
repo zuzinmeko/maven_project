@@ -1,0 +1,1 @@
+INSERT INTO student (student_name,mail,City,Township,Street,dob) VALUES ('zuzin','zuzin@gmail.com','yangon','hlaing','thanlan','1998-12-12');
