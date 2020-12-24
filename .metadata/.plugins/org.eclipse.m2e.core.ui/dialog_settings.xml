@@ -52,6 +52,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="10-JpaAssignment"/>
+			<item value="09-JPA-Assignment"/>
 			<item value="09-JPA"/>
 			<item value="08-servlet-upload"/>
 			<item value="07-El-JSTL"/>
