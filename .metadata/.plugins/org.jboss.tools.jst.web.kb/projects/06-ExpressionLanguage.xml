@@ -5,66 +5,21 @@
  <paths>
   <path value="C:/Users/hp/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar">
    <libraries>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0-rt.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0-rt.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fn.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/permittedtaglibs.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/scriptfree.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0-rt.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0-rt.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0.tld" project="06-ExpressionLanguage"/>
-    </library>
-    <library class="tld">
-     <id class="model-object"
-      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x.tld" project="06-ExpressionLanguage"/>
-    </library>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
+    <library class="tld"/>
    </libraries>
   </path>
   <path value="C:/Users/hp/.m2/repository/jakarta/servlet/jsp/jakarta.servlet.jsp-api/2.3.6/jakarta.servlet.jsp-api-2.3.6.jar"/>
@@ -126,9 +81,5 @@
   <alias path="param.email" value="%6"/>
  </aliases>
  <includes/>
- <uris>
-  <uri value="http://java.sun.com/jsp/jstl/core">
-   <prefix>c</prefix>
-  </uri>
- </uris>
+ <uris/>
 </kb-project>

@@ -2,8 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="D:\Testing_JavaEE\02-hello-servlet"/>
+			<item value="D:\Testing_JavaEE\06-ExpressionLanguage"/>
 			<item value="D:\Testing_JavaEE\07-El-JSTL"/>
+			<item value="D:\Testing_JavaEE\09-jpa-em"/>
+			<item value="D:\Testing_JavaEE\02-hello-servlet"/>
 			<item value="D:\Testing_JavaEE\05-java-bean"/>
 			<item value="D:\Testing_JavaEE\03-servlet-scope"/>
 			<item value="D:\Testing_JavaEE\Servers"/>
@@ -53,6 +55,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="07-JSTL-STUDENT-COURSE"/>
+			<item value="11-EM_JSP"/>
+			<item value="11-EM-JSP"/>
 			<item value="09-jpa-em"/>
 			<item value="09-JPA-EntityManager"/>
 			<item value="10-JpaAssignment"/>
