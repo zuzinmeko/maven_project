@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.mmit.service.CourseService;
-@WebServlet({"/add-course","/courses"})
+@WebServlet(urlPatterns = {"/add-course","/courses","/remove-course","/","/edit-course"},loadOnStartup = 1)
 public class CourseController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -50,7 +50,7 @@ public class CourseController extends HttpServlet {
 		if("/add-course".equals(action)) {
 			req.setAttribute("title", "addcourse");
 			getServletContext().getRequestDispatcher("/course-add.jsp").forward(req, resp);
-		}else if("/courses".equals(action)) {
+		}else if("/courses".equals(action)||"/".equals(action)) {
 			//get course list from database
 			List<Course> list=service.findAll();
 			
@@ -58,6 +58,27 @@ public class CourseController extends HttpServlet {
 			req.setAttribute("courselist", list);
 			//invoke index.jsp to display data
 			getServletContext().getRequestDispatcher("/index.jsp").forward(req, resp);
+		}else if("/remove-course".equals(action)){
+			//get parameter 
+			String id=req.getParameter("courseId");
+			//remove entity
+			service.delete(Integer.parseInt(id));
+			//redirect display page-invoke courselist page
+			resp.sendRedirect(req.getContextPath().concat("/courses"));
+		}else if("/edit-course".equals(action)) {
+			//get parameter
+			int id=Integer.parseInt(req.getParameter("id"));
+			
+			//retrieve data form db
+			Course c=service.findById(id);
+			
+			//add course entity to request obj
+			req.setAttribute("courselist", c);
+			
+			//invoke other web page
+			req.setAttribute("title", "addcourse");
+			getServletContext().getRequestDispatcher("/course-add.jsp").forward(req, resp);
+			
 		}
 	
 	} 
@@ -66,14 +87,17 @@ public class CourseController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//get parameter data
+		String id=req.getParameter("courseid");
 		String name=req.getParameter("courseName");
 		String price=req.getParameter("price");
 		String level=req.getParameter("level");
 		String duration=req.getParameter("duration");
 		String date=req.getParameter("date");
 	
-		//create object
-		Course course=new Course();
+		//create or edit object
+		Course course=(id !=null && !id.isEmpty()? service.findById(Integer.parseInt(id)):new Course());
+		
+		
 		course.setDuration(Integer.parseInt(duration));
 		course.setLevel(level);
 		course.setName(name);

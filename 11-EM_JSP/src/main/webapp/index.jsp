@@ -21,7 +21,7 @@ table,tr, td,th {
 <div class="container">
 		<div class="row mt-5">
 			<div class="col-10">
-				<h3>All courses</h3>
+				<h3>All courses</h3><hr />
 			</div>
 			<div class="col-2">
 				<c:url value="/course-add.jsp" var="add"></c:url>
@@ -37,6 +37,7 @@ table,tr, td,th {
 					<th>Level</th>
 					<th>Duration</th>
 					<th>Start Date</th>
+					<th>Action</th>
 				</tr>
 				<c:forEach items="${courselist }" var="course">
 				<tr>
@@ -46,6 +47,16 @@ table,tr, td,th {
 					<td>${course.price }</td>
 					<td>${course.duration }</td>
 					<td>${course.startDate }</td>
+					<td>
+					<c:url value="/edit-course" var="edit">
+						<c:param name="id" value="${course.id }"></c:param>
+					</c:url>
+					<a href="${edit }" class="btn btn-outline-warning">Edit</a>
+					<c:url value="/remove-course" var="remove">
+						<<c:param name="courseId" value="${course.id }"></c:param>
+					</c:url>
+					<a href="${remove }" class="btn btn-outline-danger">Delete</a>
+					</td>
 				</tr>
 				</c:forEach>
 				

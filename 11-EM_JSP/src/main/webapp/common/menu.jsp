@@ -20,7 +20,8 @@
 		    <div class="collapse navbar-collapse" id="navbarNav">
 		      <ul class="navbar-nav">
 		        <li class="nav-item">
-		          <a class="nav-link ${empty title ? 'active' :'' }" aria-current="page" href="<%= pageContext.getServletContext().getContextPath() %>">Course List</a>
+		        	<c:url value="/courses" var="course"></c:url>
+		          <a class="nav-link ${empty title ? 'active' :'' }" aria-current="page" href="${course }">Course List</a>
 		        </li>
 		        <li class="nav-item">
 		        	<c:url value="/add-course" var="courseAdd"></c:url>

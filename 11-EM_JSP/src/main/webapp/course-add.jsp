@@ -14,10 +14,11 @@
 <div class="container">
 	<div class="row">
 		<div class="col-8 mt-5">
-			<h3>Add course</h3>
+		
+			<h3>${courselist !=null ? 'Edit Course':'Add New Course'}</h3>
 		</div>
 		<div class="col-4 mt-5">
-				<c:url value="/index.jsp" var="course"></c:url>
+				<c:url value="/courses" var="course"></c:url>
 				<a href="${course }" class="btn btn-primary">Go back</a>
 			</div>
 	</div>
@@ -26,33 +27,34 @@
 			<hr />
 			<c:url value="/add-course" var="add"></c:url>
 			<form action="${add }" class="form" method="post">
+				<input type="hidden" name="courseid" value="${courselist.id }" />
 				<div class="form-group">
 					<label> Course Name</label>
-					<input type="text" name="courseName" required="required" placeholder="Enter course name" class="form-control" />
+					<input type="text" value="${courselist.name }" name="courseName" required="required" placeholder="Enter course name" class="form-control" />
 				</div>
 				
 				<div class="form-group">
 					<label> Price</label>
-					<input type="text" name="price" required="required" placeholder="Enter course price" class="form-control" />
+					<input type="text" value="${courselist.price }" name="price" required="required" placeholder="Enter course price" class="form-control" />
 				</div>
 				
 				<div class="form-group">
 					<label for="level">Level</label>
 					<select name="level" id="level" class="form-control">
-						<option value="basic">Basic</option>
-						<option value="intermediate">Intermediate</option>
-						<option value="advanced">Advanced</option>
+						<option value="basic" ${courselist.level =='basic' ? 'selected' :'' }>Basic</option>
+						<option value="intermediate" ${courselist.level =='intermediate' ? 'selected' :'' }>Intermediate</option>
+						<option value="advanced" ${courselist.level =='advanced' ? 'selected' :'' }>Advanced</option>
 					</select>
 				</div>
 				
 				<div class="form-group">
 					<label>Duration (Months)</label>
-					<input type="number" name="duration" required="required" placeholder="Enter course duration" class="form-control" />
+					<input type="number" value="${courselist.duration }" name="duration" required="required" placeholder="Enter course duration" class="form-control" />
 				</div>
 				
 				<div class="form-group">
 					<label> Start Date</label>
-					<input type="date" name="date" required="required" class="form-control" />
+					<input type="date" value="${courselist.startDate }" name="date" required="required" class="form-control" />
 				</div>
 				<div class="form-group">
 						<button type="submit" class="btn btn-outline-primary">Save</button>

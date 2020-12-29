@@ -14,8 +14,11 @@ public class CourseService {
 	}
 	public void saveCourse(Course course) {
 		em.getTransaction().begin();
-		em.persist(course);
-		
+		if(em.contains(course)) {
+			em.merge(course);
+			
+		}else
+			em.persist(course);
 		em.getTransaction().commit();
 		
 	}
@@ -23,6 +26,19 @@ public class CourseService {
 		TypedQuery<Course> query=em.createQuery("SELECT c FROM Course c", Course.class);
 		List<Course> list=query.getResultList();
 		return list;
+	}
+	public void delete(int id) {
+		//find entity
+		Course c=em.find(Course.class, id);
+		em.getTransaction().begin();
+		em.remove(c);
+		em.getTransaction().commit();
+		
+	}
+	public Course findById(int id) {
+		// TODO Auto-generated method stub
+		
+		return em.find(Course.class, id);
 	}
 
 }
