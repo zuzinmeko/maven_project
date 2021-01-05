@@ -7,6 +7,8 @@
 <meta charset="ISO-8859-1">
 <title>Add Course Page</title>
 <link href="./common/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="./common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/common/js/jquery.min.js"></script>
 </head>
 <body>
 <jsp:include page="/common/menu.jsp"></jsp:include>

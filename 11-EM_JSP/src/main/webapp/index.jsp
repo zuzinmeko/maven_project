@@ -53,7 +53,7 @@ table,tr, td,th {
 					</c:url>
 					<a href="${edit }" class="btn btn-outline-warning">Edit</a>
 					<c:url value="/remove-course" var="remove">
-						<<c:param name="courseId" value="${course.id }"></c:param>
+						<c:param name="courseId" value="${course.id }"></c:param>
 					</c:url>
 					<a href="${remove }" class="btn btn-outline-danger">Delete</a>
 					</td>

@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.mmit.service.CourseService;
-@WebServlet(urlPatterns = {"/add-course","/courses","/remove-course","/","/edit-course"},loadOnStartup = 1)
+@WebServlet(urlPatterns = {"/add-course","/courses","/remove-course","/edit-course",""},loadOnStartup = 1)
 public class CourseController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -50,7 +50,7 @@ public class CourseController extends HttpServlet {
 		if("/add-course".equals(action)) {
 			req.setAttribute("title", "addcourse");
 			getServletContext().getRequestDispatcher("/course-add.jsp").forward(req, resp);
-		}else if("/courses".equals(action)||"/".equals(action)) {
+		}else if("/courses".equals(action)||"".equals(action)) {
 			//get course list from database
 			List<Course> list=service.findAll();
 			

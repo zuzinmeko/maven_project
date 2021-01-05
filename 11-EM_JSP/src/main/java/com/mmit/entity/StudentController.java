@@ -6,6 +6,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -15,30 +17,75 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
-@WebServlet(urlPatterns = {"/add-student","/students"},loadOnStartup = 2)
+
+import com.mmit.service.CourseService;
+import com.mmit.service.StudentService;
+@WebServlet(urlPatterns = {"/add-student","/students","/remove-student","/edit-student"},loadOnStartup = 2)
 @MultipartConfig
 public class StudentController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
+	private EntityManagerFactory  emf;
+	private StudentService service;
+	
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		super.init(config);
+		Object object=getServletContext().getAttribute("entitymanagerfactory");
+		if(object==null) {
+			emf=Persistence.createEntityManagerFactory("jpa11");
+			getServletContext().setAttribute("entitymanagerfactory", emf);
+		}else {
+			emf=(EntityManagerFactory) object;
+		}
+		service=new StudentService(emf.createEntityManager());
+		
+	}
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String path=req.getServletPath();
-		String title="students";
-		String page="/student.jsp";
+		//String path=req.getServletPath();
+		String action=req.getServletPath();
+		if("/add-student".equals(action)) {
+			req.setAttribute("title", "add-student");
+			getServletContext().getRequestDispatcher("/student-add.jsp").forward(req, resp);
+		}else if("/students".equals(action)) {
+			List<Student> list=service.findAll();
+			req.setAttribute("studentlist", list);
+			getServletContext().getRequestDispatcher("/student.jsp").forward(req, resp);
 		
-		if("/add-student".equals(path)) {
-			title="addstudent";
-			page="/student-add.jsp";
+		}else if("/remove-student".equals(action)){
+			//get parameter 
+			String id=req.getParameter("studentId");
+			//remove entity
+			service.delete(Integer.parseInt(id));
+			//redirect display page-invoke student list page
+			resp.sendRedirect(req.getContextPath().concat("/students"));
+		}else if("/edit-student".equals(action)) {
+			//get parameter
+			int id=Integer.parseInt(req.getParameter("id"));
+			
+			//retrieve data form db
+				Student s=service.findById(id);
+			
+			//add course entity to request obj
+			req.setAttribute("studentlist", s);
+			
+			//invoke other web page
+			req.setAttribute("title", "addstudent");
+			getServletContext().getRequestDispatcher("/student-add.jsp").forward(req, resp);
+			
 		}
-		req.setAttribute("title", title);
-		getServletContext().getRequestDispatcher(page).forward(req, resp);
+
+		
 		
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//get parameter data
+				String id=req.getParameter("studentid");
 				String name=req.getParameter("sname");
 				String email=req.getParameter("email");
 				String year=req.getParameter("year");
@@ -60,7 +107,7 @@ public class StudentController extends HttpServlet {
 				//System.out.println("After upload img file "+imgFileName);
 			
 				//create object
-				Student student=new Student();
+				Student student=(id !=null && !id.isEmpty()? service.findById(Integer.parseInt(id)):new Student());
 				student.setName(name);
 				student.setEmail(email);
 				student.setAge(Integer.parseInt(age));
@@ -69,16 +116,10 @@ public class StudentController extends HttpServlet {
 				student.setDateOfBirth(LocalDate.parse(dateofbirth));
 				student.setProfile(imgFileName);
 				
+				//insert student entity obj ot db
+				service.saveStuden(student);
 				
-				//get session object
-				HttpSession session=req.getSession(true);
-				List<Student> list=(ArrayList<Student>)session.getAttribute("studentlist");
-				if(list==null)
-					list=new ArrayList<Student>();
-				//add new course object to session object
-				list.add(student);
-				//add list object to session object
-				session.setAttribute("studentlist", list);
+			
 				
 				String rootPath=getServletContext().getRealPath("");
 				String dirPath=rootPath+File.separator+"imgUploads";
@@ -90,9 +131,9 @@ public class StudentController extends HttpServlet {
 					
 				//invoke other web page(for display)
 				//System.out.println("path :"+req.getContextPath());
-				//resp.sendRedirect(req.getContextPath());
+				resp.sendRedirect(req.getContextPath().concat("/students"));
 				//getServletContext().getRequestDispatcher("/student.jsp").forward(req, resp);
-				resp.sendRedirect("student.jsp");
+				
 	
 	}
 
