@@ -22,6 +22,7 @@ public class OrderDetail implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "orderlist_id")
 	private Orders orderlist;
+	
 	@ManyToOne
 	@JoinColumn(name = "item_id")
 	private Item item;

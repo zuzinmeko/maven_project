@@ -29,7 +29,7 @@ public class Item implements Serializable {
 	@JoinColumn(name = "category_id")
 	private Category category;
 	
-	@OneToMany(mappedBy = "orderlist")
+	@OneToMany(mappedBy = "item")
 	private List<OrderDetail> orderdetaillist;
 	public Item() {
 		super();

@@ -24,7 +24,7 @@ public class Orders implements Serializable {
 	private int totalqty;
 	@ManyToOne
 	@JoinColumn(name = "customer_id")
-	private Customer customer;
+	private Customer customers;
 	@OneToMany(mappedBy = "orderlist")
 	private List<OrderDetail> orderdetaillist;
 	public Orders() {
