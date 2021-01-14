@@ -13,7 +13,8 @@ import static javax.persistence.CascadeType.REMOVE;
  *
  */
 @Entity
-
+@NamedQuery(name="CategoryGetAll",query="SELECT c FROM Category c ")
+@NamedQuery(name="Category.findByName",query="SELECT c FROM Category c WHERE c.name=:catName")
 public class Category implements Serializable {
 
 	
@@ -25,6 +26,38 @@ public class Category implements Serializable {
 	private String name;
 	@OneToMany(mappedBy = "category", cascade = REMOVE, orphanRemoval = true)
 	private List<Item> itemList;
+	
+	
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public List<Item> getItemList() {
+		return itemList;
+	}
+
+
+	public void setItemList(List<Item> itemList) {
+		this.itemList = itemList;
+	}
+
+
 	public Category() {
 		super();
 	}

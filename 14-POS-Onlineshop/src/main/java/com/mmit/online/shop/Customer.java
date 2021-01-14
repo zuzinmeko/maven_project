@@ -12,6 +12,7 @@ import javax.persistence.*;
 @Entity
 @Table(name="customers")
 @NamedQuery(name="CustomerGetAll",query="SELECT c FROM Customer c ")
+@NamedQuery(name="Customer.findByName",query="SELECT c FROM Customer c WHERE c.name=:cusName")
 public class Customer implements Serializable {
 
 	
