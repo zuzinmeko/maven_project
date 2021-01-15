@@ -50,7 +50,6 @@ class Category_Testing {
 	//@Test
 	void retrieve_categoryById() {
 		List<Category> list=service.findById(2,5);
-		
 		list.forEach(c->{
 			System.out.println(c.getName()+"\t"+c.getId());
 		});

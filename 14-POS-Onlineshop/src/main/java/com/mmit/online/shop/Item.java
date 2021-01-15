@@ -29,8 +29,57 @@ public class Item implements Serializable {
 	@JoinColumn(name = "category_id")
 	private Category category;
 	
-	@OneToMany(mappedBy = "item")
-	private List<OrderDetail> orderdetaillist;
+	
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public int getPrice() {
+		return price;
+	}
+
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+
+	public LocalDate getExpiredate() {
+		return expiredate;
+	}
+
+
+	public void setExpiredate(LocalDate expiredate) {
+		this.expiredate = expiredate;
+	}
+
+
+	public Category getCategory() {
+		return category;
+	}
+
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+
 	public Item() {
 		super();
 	}

@@ -24,7 +24,7 @@ public class Category implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
-	@OneToMany(mappedBy = "category", cascade = REMOVE, orphanRemoval = true)
+	@OneToMany(mappedBy = "category")
 	private List<Item> itemList;
 	
 	
