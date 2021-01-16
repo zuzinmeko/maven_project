@@ -1,8 +1,8 @@
 INDEX VERSION 1.131
-D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1998793231.index
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\230757895.index
 \11-EM_JSP\src\main\java
-D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3631057665.index
-\03-servlet-scope\src\main\java
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4176388437.index
+\02-hello-servlet\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3475248168.index
 \07-El-JSTL\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1292719368.index
@@ -17,13 +17,17 @@ D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\56684916
 \07-El-JSTL\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2166327621.index
 \06-ExpressionLanguage\src\main\java
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3587034830.index
+\15-PointOfSale\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2774570746.index
 \07-JSTL-STUDENT-COURSE\src\main\java
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1630904524.index
+\15-PointOfSale\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3547668029.index
 \07-El-JSTL2\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1571799513.index
 \05-java-bean\src\main\java
-D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\230757895.index
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1998793231.index
 \11-EM_JSP\src\main\java
-D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4176388437.index
-\02-hello-servlet\src\main\java
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3631057665.index
+\03-servlet-scope\src\main\java

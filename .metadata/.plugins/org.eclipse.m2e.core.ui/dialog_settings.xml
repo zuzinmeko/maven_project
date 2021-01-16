@@ -57,6 +57,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="14-PointOfSale"/>
 			<item value="14-POS-Onlineshop"/>
 			<item value="14-onlineshop-jsp"/>
 			<item value="13-jpa-relationship"/>
@@ -71,7 +72,6 @@
 			<item value="09-JPA-Assignment"/>
 			<item value="09-JPA"/>
 			<item value="08-servlet-upload"/>
-			<item value="07-El-JSTL"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
