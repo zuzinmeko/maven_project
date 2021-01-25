@@ -2,6 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Testing_JavaEE\jsf-project-template\pom.xml"/>
+			<item value="D:\Testing_JavaEE\jsf-project-template"/>
+			<item value="D:\Testing_JavaEE\17-JSF-maven-project-template"/>
+			<item value="D:\Testing_JavaEE\14-POS-Onlineshop"/>
 			<item value="D:\Testing_JavaEE\15-PointOfSale"/>
 			<item value="D:\Testing_JavaEE\12-CollectionClass"/>
 			<item value="D:\Testing_JavaEE\11-EM_JSP"/>
@@ -54,10 +58,17 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.mmit.jpit"/>
+			<item value="mmit"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="17-JSF-Project"/>
+			<item value="jsf-project-template"/>
+			<item value="17-Project-jsf"/>
+			<item value="17-JSF-Project-Template"/>
+			<item value="17-JSF-02"/>
+			<item value="17-JSF-maven-project-template"/>
 			<item value="16-hello-wildfly"/>
 			<item value="16-Hello-Widfly"/>
 			<item value="16-widfly-hello"/>
@@ -67,12 +78,6 @@
 			<item value="13-jpa-relationship"/>
 			<item value="relationship"/>
 			<item value="12-CollectionClass"/>
-			<item value="07-JSTL-STUDENT-COURSE"/>
-			<item value="11-EM_JSP"/>
-			<item value="11-EM-JSP"/>
-			<item value="09-jpa-em"/>
-			<item value="09-JPA-EntityManager"/>
-			<item value="10-JpaAssignment"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -84,6 +89,7 @@
 		</list>
 		<list key="version">
 			<item value="1.0"/>
+			<item value="1.0Final"/>
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">

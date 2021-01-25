@@ -7,6 +7,7 @@
  </paths>
  <validation>
   <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core"/>
   <el/>
  </validation>
  <aliases/>
