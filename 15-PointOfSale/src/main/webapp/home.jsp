@@ -34,7 +34,13 @@
 						<td>${i.price }</td>
 						<td>${i.expiredate }</td>
 						<td>${i.category.name}</td>
-						<td><i class="fa fa-cart-plus fa-2x "></i></td>
+						<td>
+						<c:url value="/add-to-cart" var="add">
+							<c:param name="id" value="${i.id }"></c:param>
+						</c:url>
+						<a href="${add }">
+						<i class="fa fa-cart-plus fa-2x "></i>
+						</a></td>
 					</tr>
 					</c:forEach>
 				</tbody>
@@ -48,23 +54,44 @@
 						<thead>
 							<tr>
 									<th>Product</th>
-									<th>Qty</th>
 									<th>Price</th>
+									<th>Quantity</th>
 									<th>Total Price</th>
 								</tr>
 						</thead>
 						<tbody>
 							<!-- display cartlist --> 
+							<c:forEach items="${cart.detaillist}" var="sd">
+								<tr>
+									<td>${sd.item.name}</td>
+									<td>${sd.item.price}</td>
+									<td>${sd.subQty }</td>
+									<td>${sd.item.price * sd.subQty}</td>
+								</tr>
+								
+							</c:forEach>
+							<tr class="${empty cart ? 'd-none' : '' }">
+									<td colspan="3" align="right">SubTotal:</td>
+									<td>${cart.subTotal}</td>
+							</tr>
+							<tr class="${empty cart ? 'd-none' : '' }">
+								<td colspan="3" align="right">Tax:</td>
+								<td>${cart.tax}</td>
+							</tr>
+							<tr class="${empty cart ? 'd-none' : '' }">
+								<td colspan="3" align="right">Total:</td>
+								<td>${cart.total}</td>
+							</tr>
 						</tbody>	
 				</table>
-				
-				<form action="" class="form" method="post">
+				<c:url value="/cart-action" var="action"></c:url>
+				<form action="${action}" class="form" method="post">
 					<div class="form-row">
 						<div class="col">
-							<button class="form-control btn btn-primary" type="submit">Paid</button>
+							<input type="submit" class="form-control btn btn-primary ${empty cart ? 'd-none' : ''}" value="Paid" name="btnAction" />
 						</div>
 						<div class="col">
-							<button class="form-control btn btn-danger" type="submit">Cancel</button>
+							<input type="submit" class="form-control btn btn-danger ${empty cart ? 'd-none' : ''}" value="Clear" name="btnAction" />
 						</div>
 					</div>
 				</form>

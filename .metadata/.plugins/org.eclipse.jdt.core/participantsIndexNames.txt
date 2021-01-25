@@ -23,8 +23,12 @@ D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\27745707
 \07-JSTL-STUDENT-COURSE\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1630904524.index
 \15-PointOfSale\src\main\java
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2954734240.index
+\16-Hello-Widfly\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3547668029.index
 \07-El-JSTL2\src\main\java
+D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3386828841.index
+\16-widfly-hello\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1571799513.index
 \05-java-bean\src\main\java
 D:\Testing_JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1998793231.index

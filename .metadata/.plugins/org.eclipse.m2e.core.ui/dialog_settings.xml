@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Testing_JavaEE\15-PointOfSale"/>
 			<item value="D:\Testing_JavaEE\12-CollectionClass"/>
 			<item value="D:\Testing_JavaEE\11-EM_JSP"/>
 			<item value="D:\Testing_JavaEE\06-ExpressionLanguage"/>
@@ -57,6 +58,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="16-hello-wildfly"/>
+			<item value="16-Hello-Widfly"/>
+			<item value="16-widfly-hello"/>
 			<item value="14-PointOfSale"/>
 			<item value="14-POS-Onlineshop"/>
 			<item value="14-onlineshop-jsp"/>
@@ -69,9 +73,6 @@
 			<item value="09-jpa-em"/>
 			<item value="09-JPA-EntityManager"/>
 			<item value="10-JpaAssignment"/>
-			<item value="09-JPA-Assignment"/>
-			<item value="09-JPA"/>
-			<item value="08-servlet-upload"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -13,10 +13,13 @@ public class ItemService {
 	}
 	public void save(Item item) {
 		em.getTransaction().begin();
-		if(item.getId()==0) 
+		if(item.getId()==0) {
 			em.persist(item);
-		else
+			}
+		else {
 			em.merge(item);
+			System.out.println("item from itemservice"+item);
+			}
 		em.getTransaction().commit();
 		
 	}

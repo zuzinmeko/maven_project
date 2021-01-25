@@ -2,6 +2,7 @@ package com.mmit.pos.model.entity;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import static javax.persistence.FetchType.LAZY;
 
 /**
  * Entity implementation class for Entity: OrderDetail

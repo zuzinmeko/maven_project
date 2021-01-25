@@ -17,6 +17,7 @@ import static javax.persistence.CascadeType.REMOVE;
 @Entity
 
 @Table(name="sale")
+@NamedQuery(name = "Sale.getAll", query = "SELECT s FROM Sale s ORDER BY s.sale_date DESC")
 public class Sale implements Serializable {
 
 	
@@ -24,7 +25,7 @@ public class Sale implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private LocalDate saleDate;
+	private LocalDate sale_date;
 	
 	@OneToMany(mappedBy = "sale", cascade = { PERSIST, MERGE, REMOVE })
 	private List<SaleDetail> detaillist=new ArrayList<>();
@@ -32,6 +33,19 @@ public class Sale implements Serializable {
 	public void addSaleItem(SaleDetail s) {
 		s.setSale(this);
 		detaillist.add(s);
+	}
+	public int getSubTotal() {
+		return	detaillist.stream().mapToInt(sd->sd.getSubQty()*sd.getItem().getPrice()).sum();
+		
+	}
+	public int getTotalQty() {
+		return detaillist.stream().mapToInt(sd->sd.getSubQty()).sum();
+	}
+	public double getTax() {
+		return getSubTotal()*0.05;
+	}
+	public double getTotal() {
+		return getSubTotal()+getTax();
 	}
 	public Sale() {
 		super();
@@ -43,11 +57,12 @@ public class Sale implements Serializable {
 		this.id = id;
 	}
 	
-	public LocalDate getSaleDate() {
-		return saleDate;
+	
+	public LocalDate getSale_date() {
+		return sale_date;
 	}
-	public void setSaleDate(LocalDate saleDate) {
-		this.saleDate = saleDate;
+	public void setSale_date(LocalDate sale_date) {
+		this.sale_date = sale_date;
 	}
 	public List<SaleDetail> getDetaillist() {
 		return detaillist;
@@ -55,5 +70,10 @@ public class Sale implements Serializable {
 	public void setDetaillist(List<SaleDetail> detaillist) {
 		this.detaillist = detaillist;
 	}
-   
+	public List<SaleDetail> getDetailList() {
+		return detaillist;
+	}
+	public void setDetailList(List<SaleDetail> detailList) {
+		this.detaillist = detailList;
+	}
 }

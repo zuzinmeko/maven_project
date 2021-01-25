@@ -18,7 +18,7 @@ import com.mmit.pos.model.entity.Category;
 import com.mmit.pos.model.entity.Item;
 import com.mmit.pos.model.service.CategoryService;
 import com.mmit.pos.model.service.ItemService;
-@WebServlet (urlPatterns = {"/items","/item-add","/item-save","/item-edit"},loadOnStartup = 2)
+@WebServlet (urlPatterns = {"/items","/item-add","/item-save","/item-edit"},loadOnStartup = 1)
 public class ItemController extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
@@ -51,7 +51,7 @@ public class ItemController extends HttpServlet{
 		}
 		else if("/item-add".equals(action) || "/item-edit".equals(action)) {
 			String itemid=req.getParameter("id");
-			Item i=(itemid !=null && itemid.isEmpty()) ? itemservice.findById(Integer.parseInt(itemid)) :new Item();
+			Item i=(itemid !=null && !itemid.isEmpty()) ? itemservice.findById(Integer.parseInt(itemid)) :new Item();
 			req.setAttribute("item", i);
 			
 			getServletContext().getRequestDispatcher("/item-add.jsp").forward(req, resp);

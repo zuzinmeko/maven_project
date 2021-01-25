@@ -1,9 +1,9 @@
-#Fri Jan 15 21:22:26 MMT 2021
+#Mon Jan 25 15:10:28 MMT 2021
 ct=jbt
 a=finishWizard
 c=0
-s=2
-d=1610722346470
+s=0
+d=1611564028573
 v=2.2.300
 vl=How many times the 'Finish' button pressed during the day
 cmp=usage

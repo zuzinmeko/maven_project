@@ -1,6 +1,7 @@
 package com.mmit.pos.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -16,13 +17,17 @@ import javax.servlet.http.HttpSession;
 
 import com.mmit.pos.model.entity.Category;
 import com.mmit.pos.model.entity.Item;
+import com.mmit.pos.model.entity.Sale;
+import com.mmit.pos.model.entity.SaleDetail;
 import com.mmit.pos.model.service.CategoryService;
 import com.mmit.pos.model.service.ItemService;
-@WebServlet(urlPatterns = {"/home"},loadOnStartup = 1)
+import com.mmit.pos.model.service.SaleService;
+@WebServlet(urlPatterns = {"/home","/add-to-cart","/cart-action"},loadOnStartup = 1)
 public class HomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private CategoryService service;
 	private ItemService itemservice;
+	private SaleService saleservice;
 	
 	@Override
 	public void init(ServletConfig config) throws ServletException {
@@ -34,6 +39,8 @@ public class HomeController extends HttpServlet {
 		}
 		service=new CategoryService(emf.createEntityManager());
 		itemservice=new ItemService(emf.createEntityManager() );
+		saleservice=new SaleService(emf.createEntityManager());
+		
 		
 		//get category list from db
 		List<Category> list=service.findAll();
@@ -49,9 +56,70 @@ public class HomeController extends HttpServlet {
 	}
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		List<Item> list=itemservice.findAll();
-		req.setAttribute("itemlist", list);
+		String action=req.getServletPath();
+		if("/add-to-cart".equals(action)) {
+			addToCart(req);
+			
+		}
+
+		getAllItems(req);
 		getServletContext().getRequestDispatcher("/home.jsp").forward(req, resp);
 	}
+	private void getAllItems(HttpServletRequest req) {
 
+		List<Item> list=itemservice.findAll();
+		req.setAttribute("itemlist", list);
+		
+	}
+	private void addToCart(HttpServletRequest req) {
+		//get current item added to cart
+		String itemid=req.getParameter("id");
+		int currentitemId=Integer.parseInt(itemid);
+		
+		//get cart info from session
+		HttpSession session=req.getSession(true);
+		Sale sale=(Sale) session.getAttribute("cart");
+		if(sale==null)
+			sale=new Sale();
+		
+		//verify current item is new or original?
+		List<SaleDetail> saleitemList=sale.getDetaillist();
+		boolean already_exist=false;
+		
+		for(SaleDetail sd: saleitemList) {
+			if(sd.getItem().getId() == currentitemId) {
+				sd.setSubQty(sd.getSubQty()+1);
+				already_exist=true;
+				break;
+			}
+		}
+		//new sale item
+		if(!already_exist) {
+			Item item=itemservice.findById(currentitemId);
+			SaleDetail newsaleitem=new SaleDetail();
+			
+			newsaleitem.setItem(item);
+			newsaleitem.setSubQty(1);
+			sale.addSaleItem(newsaleitem);
+			}
+		session.setAttribute("cart", sale);
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String action=req.getParameter("btnAction");
+		HttpSession session=req.getSession(true);
+		if("Paid".equals(action)) {
+			//paid click=> save to db
+			Sale sale=(Sale) session.getAttribute("cart");
+			if(sale !=null && !sale.getDetaillist().isEmpty()) {
+				saleservice.save(sale);
+			}
+			
+		session.removeAttribute("cart");
+		resp.sendRedirect(req.getContextPath().concat("/home"));
+			
+	}
+
+}
 }
