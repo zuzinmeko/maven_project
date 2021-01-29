@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Testing_JavaEE\17-JSF-Project"/>
 			<item value="D:\Testing_JavaEE\jsf-project-template\pom.xml"/>
 			<item value="D:\Testing_JavaEE\jsf-project-template"/>
 			<item value="D:\Testing_JavaEE\17-JSF-maven-project-template"/>
@@ -63,8 +64,10 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="17-JSF-Project"/>
+			<item value="18-JSFandJPAproject"/>
 			<item value="jsf-project-template"/>
+			<item value="18-jsf-jpa-project"/>
+			<item value="17-JSF-Project"/>
 			<item value="17-Project-jsf"/>
 			<item value="17-JSF-Project-Template"/>
 			<item value="17-JSF-02"/>
@@ -76,8 +79,6 @@
 			<item value="14-POS-Onlineshop"/>
 			<item value="14-onlineshop-jsp"/>
 			<item value="13-jpa-relationship"/>
-			<item value="relationship"/>
-			<item value="12-CollectionClass"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

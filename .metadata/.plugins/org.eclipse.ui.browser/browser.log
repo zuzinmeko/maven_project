@@ -370,3 +370,66 @@ Jan 25, 2021 22:50:33.114 [9980:11900:0125/225033.114:ERROR:connection_factory_i
 Jan 25, 2021 23:00:33.117 [9980:11900:0125/230033.117:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
 Jan 25, 2021 23:10:33.130 [9980:11900:0125/231033.129:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
 Jan 25, 2021 23:20:33.133 [9980:11900:0125/232033.133:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+Jan 26, 2021 15:09:58.441 NEW SESSION
+Jan 26, 2021 15:09:58.441 [10420:5372:0126/150958.403:ERROR:device_event_log_impl.cc(211)] [15:09:58.372] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jan 26, 2021 15:18:16.494 [0126/151816.492:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+
+Jan 28, 2021 11:11:38.807 NEW SESSION
+Jan 28, 2021 11:11:38.807 [15924:15572:0128/111138.734:ERROR:device_event_log_impl.cc(211)] [11:11:38.685] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jan 28, 2021 11:11:42.123 [15924:7984:0128/111142.122:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 28, 2021 11:11:42.148 [15924:7984:0128/111142.125:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:11:42.160 [15924:7984:0128/111142.125:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:11:42.171 [15924:7984:0128/111142.125:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:11:42.181 [15924:7984:0128/111142.126:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:11:55.101 [15924:15572:0128/111155.101:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).
+Jan 28, 2021 11:12:04.916 [15924:7984:0128/111204.916:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:12:05.614 [15924:7984:0128/111205.613:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:12:07.818 [15924:7984:0128/111207.817:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:12:08.20 [15924:7984:0128/111208.020:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:12:08.213 [15924:7984:0128/111208.213:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 28, 2021 11:12:52.411 [15924:7984:0128/111252.411:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:12:58.319 [15924:7984:0128/111258.319:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:12:58.529 [15924:7984:0128/111258.529:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 28, 2021 11:13:00.657 [15924:7984:0128/111300.657:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:13:07.308 [15924:7984:0128/111307.308:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:14:34.333 [15924:7984:0128/111434.332:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:14:35.941 [15924:7984:0128/111435.941:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:14:38.208 [15924:7984:0128/111438.207:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:14:49.546 [15924:7984:0128/111449.545:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:14:57.159 [15924:7984:0128/111457.159:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 28, 2021 11:20:46.188 [14712:10168:0128/112046.188:ERROR:device_event_log_impl.cc(211)] [11:20:46.188] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jan 28, 2021 11:20:50.941 [14712:9636:0128/112050.941:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 28, 2021 11:20:50.963 [14712:9636:0128/112050.942:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:20:50.977 [14712:9636:0128/112050.943:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:20:51.02 [14712:9636:0128/112050.943:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:20:51.14 [14712:9636:0128/112050.944:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:21:11.182 [14712:9636:0128/112111.182:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 28, 2021 11:21:11.935 [14712:9636:0128/112111.935:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:21:16.254 [14712:9636:0128/112116.253:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:21:18.405 [14712:9636:0128/112118.404:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:21:19.424 [14712:9636:0128/112119.423:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:21:53.276 [14712:9636:0128/112153.276:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:22:02.55 [14712:9636:0128/112202.055:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 28, 2021 11:22:02.389 [14712:9636:0128/112202.388:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:22:09.353 [14712:9636:0128/112209.352:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:22:14.09 [14712:9636:0128/112214.009:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:23:21.860 [14712:9636:0128/112321.859:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:23:30.749 [14712:9636:0128/112330.748:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:23:48.622 [14712:9636:0128/112348.622:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 28, 2021 11:23:53.479 [14712:9636:0128/112353.479:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:24:04.362 [14712:9636:0128/112404.361:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:26:52.553 [14712:9636:0128/112652.553:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Jan 28, 2021 11:26:57.385 [14712:9636:0128/112657.385:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:26:59.106 [14712:9636:0128/112657.385:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:26:59.809 [14712:9636:0128/112657.385:ERROR:registration_request.cc(246)] Registration URL fetching failed.
+Jan 28, 2021 11:30:31.555 [0128/113031.553:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+Jan 28, 2021 11:33:27.538 [14712:10168:0128/113327.538:ERROR:device_event_log_impl.cc(211)] [11:33:27.538] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Jan 28, 2021 11:57:17.354 [8456:11864:0128/115717.323:ERROR:device_event_log_impl.cc(211)] [11:57:17.323] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jan 28, 2021 12:06:46.553 [0128/120646.552:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+Jan 28, 2021 13:48:39.979 [5660:6664:0128/134839.979:ERROR:device_event_log_impl.cc(211)] [13:48:39.936] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jan 28, 2021 13:58:03.871 [0128/135803.869:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+Jan 28, 2021 15:31:33.530 [648:13628:0128/153133.438:ERROR:device_event_log_impl.cc(211)] [15:31:33.438] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+Jan 28, 2021 16:59:17.273 NEW SESSION
+Jan 28, 2021 16:59:17.273 [15988:8180:0128/165917.091:ERROR:device_event_log_impl.cc(211)] [16:59:17.091] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)

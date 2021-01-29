@@ -1,19 +1,21 @@
 package com.mmit.beans;
 
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
-import javax.enterprise.context.SessionScoped;
+import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 
 @Named
-@SessionScoped
-public class ItemBean implements Serializable {
+@ViewScoped
+public class ItemBean implements Serializable{
 
-
+	
 	private static final long serialVersionUID = 1L;
+
 	private Item item;
 	
 	private List<Item> itemlist;
@@ -25,7 +27,9 @@ public class ItemBean implements Serializable {
 	}
 	public void save() {
 		itemlist.add(item);
+		System.out.println("item :"+item.getName());
 		item=new Item();
+		//return "index?faces-redirect=true";
 	}
 	public Item getItem() {
 		return item;
