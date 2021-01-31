@@ -6,45 +6,50 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"> 
 
 <h:head>
-<ui:include src="/views/res.xhtml" />
-<title>Home page</title>
-</h:head> 
+	<ui:include src="/views/res.xhtml" />
+	<title>Home</title>
+ </h:head> 
 <body> 
 	<div class="container">
-	<ui:include src="/views/menu.xhtml" />
-	<div class="row ml-5 mt-2">
-		<div class="col-8 pl-4 pr-3 mr-3">
-			<h5>Add  Category</h5><br />
-				<h:form styleClass="form form-inline">
-					<div class="form-group">
-						<label>Name</label>
-						<h:inputText value="#{categoryBean.category.name}" styleClass="form-control ml-3" p:placeholder="enter name" p:required="required"/>
-						<h:commandButton action="#{categoryBean.save()}" value="Save" styleClass="btn btn-success pl-4 pr-4 ml-3" />
-					</div>
-				</h:form>
-				
-		</div>
-	</div>
-	<div class="row ml-5 mt-5">
-		<div class="col-7">
-		<h5>Category list</h5>
-		<h:dataTable styleClass="table" value="#{categoryBean.categorylist}" var="c">
-			<h:column>
-				<f:facet name="header">ID</f:facet>
-				#{c.id}
-			</h:column>
-			<h:column>
-				<f:facet name="header">Name</f:facet>
-				#{c.name}
-			</h:column>
-			<h:column>
-				<f:facet name="header">Action</f:facet>
-				<h:link outcome="home" value="edit"/>
-				
-			</h:column>
-		</h:dataTable>
-	</div>
-	</div>
+	  <ui:include src="/views/menu.xhtml" />
+	  	<div class="row">
+	  		<div class="col-8">
+	  			<!-- add category-->
+	  			
+	  				<h5 class="p-3">#{categoryBean.category.id ==0 ? 'Add' : 'Edit'} Category</h5>
+	  					<h:form styleClass="form form-inline ml-2">
+	  						<h:inputHidden value="#{categoryBean.category.id}" />
+	  						<div class="form-group">
+	  						<label for="">Category Name</label>
+	  						<h:inputText value="#{categoryBean.category.name}" styleClass="form-control ml-3" p:placeholder="Enter name" p:required="required"/>
+	  						</div>
+	  						<h:commandButton action="#{categoryBean.save()}" value="Save" styleClass="btn btn-primary pl-4 pr-4 ml-3" />
+	  					</h:form>
+	  					<h:dataTable styleClass="table mt-3" value="#{categoryBean.categorylist}" var="c">
+	  						<h:column>
+	  							<f:facet name="header">ID</f:facet>
+	  							#{c.id}
+	  						</h:column>
+	  						<h:column>
+	  							<f:facet name="header"> Name</f:facet>
+	  							#{c.name}
+	  						</h:column>
+	  						<h:column>
+	  							<f:facet name="header">Action</f:facet>
+	  							
+	  							<h:form>
+	  							<h:link outcome="home" value="Edit">
+	  							<f:param name="categoryid" value="#{c.id}"></f:param>
+	  							</h:link> | 
+	  							<h:commandLink action="#{categoryBean.delete(c.id)}" value="Delete" />
+	  							</h:form>
+	  						</h:column>
+	  					</h:dataTable>
+	  	
+	  			<!--list  -->
+	  		</div>
+	  		
+	  	</div>
 	</div>
 </body> 
 </html>

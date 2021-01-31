@@ -433,3 +433,49 @@ Jan 28, 2021 15:31:33.530 [648:13628:0128/153133.438:ERROR:device_event_log_impl
 
 Jan 28, 2021 16:59:17.273 NEW SESSION
 Jan 28, 2021 16:59:17.273 [15988:8180:0128/165917.091:ERROR:device_event_log_impl.cc(211)] [16:59:17.091] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+Jan 30, 2021 12:29:45.284 NEW SESSION
+Jan 30, 2021 12:29:45.284 [11492:2172:0130/122944.866:ERROR:device_event_log_impl.cc(211)] [12:29:44.867] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jan 30, 2021 12:42:22.575 [11492:4144:0130/124222.575:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 12:42:47.09 [11492:4144:0130/124247.009:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 12:43:43.78 [11492:4144:0130/124343.078:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 12:45:38.288 [11492:4144:0130/124538.288:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 12:49:29.965 [11492:4144:0130/124929.965:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 12:55:01.981 [11492:4144:0130/125501.981:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 13:05:01.984 [11492:4144:0130/130501.984:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 13:15:01.989 [11492:4144:0130/131501.988:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 13:25:01.991 [11492:4144:0130/132501.991:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 13:27:36.67 [11492:2172:0130/132736.066:ERROR:device_event_log_impl.cc(211)] [13:27:36.066] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Jan 30, 2021 13:35:01.994 [11492:4144:0130/133501.994:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 13:45:01.997 [11492:4144:0130/134501.997:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 13:55:02.42 [11492:4144:0130/135502.042:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 14:05:02.46 [11492:4144:0130/140502.045:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 14:30:00.350 [11492:4144:0130/143000.350:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 14:30:21.814 [11492:4144:0130/143021.813:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 14:31:15.808 [11492:4144:0130/143115.808:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 14:33:00.362 [11492:4144:0130/143300.362:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 14:35:58.875 [11492:4144:0130/143558.875:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+Jan 30, 2021 18:05:02.232 NEW SESSION
+Jan 30, 2021 18:05:02.232 [320:1484:0130/180501.997:ERROR:device_event_log_impl.cc(211)] [18:05:01.996] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jan 30, 2021 18:18:26.57 [15668:15740:0130/181826.057:ERROR:device_event_log_impl.cc(211)] [18:18:26.057] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jan 30, 2021 18:28:06.818 [15668:15740:0130/182806.818:ERROR:device_event_log_impl.cc(211)] [18:28:06.817] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Jan 30, 2021 19:37:54.267 [15668:5236:0130/193754.228:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Jan 30, 2021 19:59:23.461 [4804:16188:0130/195923.460:ERROR:device_event_log_impl.cc(211)] [19:59:23.460] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jan 30, 2021 19:59:33.557 [4804:1912:0130/195933.557:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 19:59:55.510 [4804:1912:0130/195955.510:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 20:00:44.65 [4804:1912:0130/200044.065:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 20:02:08.567 [4804:1912:0130/200208.567:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 20:05:25.244 [4804:1912:0130/200525.244:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 20:12:44.353 [4804:1912:0130/201244.352:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 20:22:44.356 [4804:1912:0130/202244.355:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 20:32:44.369 [4804:1912:0130/203244.368:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 20:38:14.515 [4804:1912:0130/203814.514:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 20:48:14.518 [4804:1912:0130/204814.518:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 21:10:16.932 [4804:1912:0130/211016.932:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 21:10:44.315 [4804:1912:0130/211044.314:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 21:11:36.823 [4804:1912:0130/211136.823:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 21:13:12.962 [4804:1912:0130/211312.962:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 21:17:11.388 [4804:1912:0130/211711.387:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 21:23:15.05 [4804:1912:0130/212314.963:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2021 21:33:16.51 [4804:1912:0130/213316.050:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
