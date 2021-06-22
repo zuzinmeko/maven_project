@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Testing_JavaEE\18-JSF-Validators"/>
 			<item value="D:\Testing_JavaEE\17-JSF-Project"/>
 			<item value="D:\Testing_JavaEE\jsf-project-template\pom.xml"/>
 			<item value="D:\Testing_JavaEE\jsf-project-template"/>
@@ -16,7 +17,6 @@
 			<item value="D:\Testing_JavaEE\02-hello-servlet"/>
 			<item value="D:\Testing_JavaEE\05-java-bean"/>
 			<item value="D:\Testing_JavaEE\03-servlet-scope"/>
-			<item value="D:\Testing_JavaEE\Servers"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -64,6 +64,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="19-validators-jsf"/>
+			<item value="18-JSF-Validators"/>
 			<item value="18-JSFandJPAproject"/>
 			<item value="jsf-project-template"/>
 			<item value="18-jsf-jpa-project"/>
@@ -77,8 +79,6 @@
 			<item value="16-widfly-hello"/>
 			<item value="14-PointOfSale"/>
 			<item value="14-POS-Onlineshop"/>
-			<item value="14-onlineshop-jsp"/>
-			<item value="13-jpa-relationship"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
